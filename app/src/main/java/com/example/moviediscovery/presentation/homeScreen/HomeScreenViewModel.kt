@@ -27,6 +27,7 @@ class HomeScreenViewModel @Inject constructor(
     private val getMovieDetailsUseCase: GetMovieDetailsUseCase
 ) : ViewModel() {
 
+
     private val _movieDetailsState = MutableStateFlow<Result<MovieDetails>>(Result.Idle)
     val movieDetailsState = _movieDetailsState.asStateFlow()
 

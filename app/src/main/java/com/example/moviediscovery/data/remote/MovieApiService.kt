@@ -39,7 +39,7 @@ class MovieApiService(private val httpClient: HttpClient) {
     }
 
     suspend fun searchMovies(query: String): MoviesResponseDto {
-        return httpClient.get("/search/movie") {
+        return httpClient.get("/3/search/movie") {
             parameter("query", query)
             parameter("include_adult", false)
             parameter("language", "en-US")

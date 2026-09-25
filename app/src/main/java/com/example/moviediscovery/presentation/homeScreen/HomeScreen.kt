@@ -60,7 +60,6 @@ fun HomeScreen(
     val popularMoviesState by homeScreenViewModel.popularMoviesState.collectAsState()
     val trendingMoviesState by homeScreenViewModel.trendingMoviesState.collectAsState()
     val topRatedMoviesState by homeScreenViewModel.topRatedMoviesState.collectAsState()
-    val searchQuery by remember { mutableStateOf("") }
 
 
     Scaffold(topBar = {
@@ -69,7 +68,9 @@ fun HomeScreen(
                 Text("Movie Discovery", fontSize = 32.sp, fontWeight = FontWeight.Bold)
             },
             actions = {
-                IconButton(onClick = {}) {
+                IconButton(onClick = {
+                    navHostController.navigate(Routes.SearchScreen)
+                }) {
                     Icon(
                         imageVector = Icons.Default.Search,
                         contentDescription = null,

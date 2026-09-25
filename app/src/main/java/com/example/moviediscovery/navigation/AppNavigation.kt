@@ -7,6 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import com.example.moviediscovery.presentation.homeScreen.HomeScreen
 import com.example.moviediscovery.presentation.homeScreen.MovieDetailScreen
+import com.example.moviediscovery.presentation.homeScreen.SearchScreen
 
 @Composable
 fun AppNavigation() {
@@ -25,6 +26,10 @@ fun AppNavigation() {
                 navController = navController,
                 movieId = args.movieId
             )
+        }
+
+        composable<Routes.SearchScreen> {
+            SearchScreen(navHostController = navController)
         }
 
 
