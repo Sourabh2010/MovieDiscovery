@@ -8,6 +8,8 @@ MovieDiscovery is a modern Android application built with **Kotlin and Jetpack C
 
 
 
+
+
 ## ✨ Features
 
 - 🔥 Browse Popular Movies
@@ -43,29 +45,3 @@ MovieDiscovery is a modern Android application built with **Kotlin and Jetpack C
 
 The application follows a **Clean Architecture + MVVM** approach.
 
-Data Flow
-
-Compose UI
-    ↓
-ViewModel
-    ↓
-Use Case
-    ↓
-Repository
-    ↓
-Ktor HTTP Client
-    ↓
-TMDB API
-    ↓
-DTO
-    ↓
-Mapper
-    ↓
-Domain Model
-    ↓
-StateFlow
-    ↓
-Compose UI
-Data Layer
-        ↓
-TMDB API
