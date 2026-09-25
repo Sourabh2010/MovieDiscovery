@@ -1,13 +1,14 @@
+
+
+
+
+
 # 🎬 MovieDiscovery
 
 MovieDiscovery is a modern Android application built with **Kotlin and Jetpack Compose** that allows users to discover movies, search for movies, and view detailed information about them using the **TMDB API**.
 
 ## 🎥 App Demo
-
-
-
-
-
+https://github.com/user-attachments/assets/14eea5a5-4ce2-4d78-8bd5-ec5e23a0ffe3
 
 
 ## ✨ Features
